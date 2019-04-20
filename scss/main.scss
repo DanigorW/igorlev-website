@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#particles-js {
+  height: 80vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+img {
+  display: inline-block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  font-family: sans-serif;
+}
+
+.btn-white {
+  background: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.link li a {
+  text-decoration: none !important;
+}
+
+.btn-white:active {
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 1100;
+  margin: 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  visibility: hidden;
+  animation: blink 5s infinite;
+}
+
+.main-header {
+  height: 90vh;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 80%,
+    50% 100%,
+    50% 100%,
+    0 80%,
+    0 0
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 80%,
+    50% 100%,
+    50% 100%,
+    0 80%,
+    0 0
+  );
+  background: linear-gradient(to bottom, #c1226798, #e4287da2),
+    url("../img/1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  //clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  padding: 1rem;
+  margin: 0 2rem;
+  animation: logo 3s;
+
+  .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    animation: logo 3s;
+  }
+
+  ul {
+    display: flex;
+    margin-left: auto;
+  }
+
+  li {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+    font-family: "Orbitron", sans-serif;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+    padding-bottom: 0.5rem;
+    transform: perspective(500px) rotateY(20deg) rotateX(20deg);
+    transition: all.5s;
+
+    &:hover {
+      transform: rotateY(0) rotateX(0);
+    }
+  }
+
+  a {
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 1.5px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+
+      transition: all 0.5s;
+    }
+  }
+}
+
+ul li:hover a::before {
+  width: 100%;
+}
+
+.main-h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+  animation: logo 3s;
+  font-size: 1.3rem;
+
+  button {
+    margin: 2rem 0;
+
+    a {
+      color: #e91e63;
+    }
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
+.background {
+  
+}
+*/
+
+.main-h1 h1 {
+  &::after {
+    content: ".";
+    position: absolute;
+    margin-left: 0.3rem;
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .circle-nav {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    padding-top: 1rem;
+  }
+
+  .main-h1 {
+    font-size: 13px;
+  }
+
+  .btn-white {
+    font-size: 17px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .main-header {
+    height: 50vh;
+  }
+
+  .main-h1 {
+    top: 30%;
+  }
+}
+
+// section-1 what i do //
+
+.line {
+  width: 220px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+.line-2 {
+  width: 220px;
+  height: 2px;
+  background: #232323;
+  margin: 0 auto;
+}
+
+/*about me*/
+
+.about-me {
+  position: relative;
+  background-attachment: fixed;
+  background: #232323;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  margin-top: -5rem;
+  -webkit-clip-path: polygon(
+    50% 20%,
+    50% 20%,
+    100% 0,
+    100% 70%,
+    100% 100%,
+    0 100%,
+    0% 70%,
+    0 0
+  );
+  clip-path: polygon(
+    50% 20%,
+    50% 20%,
+    100% 0,
+    100% 70%,
+    100% 100%,
+    0 100%,
+    0% 70%,
+    0 0
+  );
+
+  .about-me-content {
+    width: 1100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+    justify-content: center;
+    transition: all 1s;
+  }
+
+  .about-me-content-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .about-me {
+    h3 {
+      font-size: 1.8rem;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    p {
+      font-family: sans-serif;
+      width: 600px;
+      font-size: 1.2rem;
+      //line-height: 1.7rem;
+      color: #e91e63;
+    }
+
+    .icons {
+      margin: 2rem 0;
+
+      li,
+      a {
+        font-size: 2rem;
+        display: inline;
+        color: #fff;
+        margin: 0 2px;
+      }
+    }
+  }
+
+  .about-me-h1 {
+    padding-top: 3rem;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .about-me-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 3rem;
+    padding: 10px;
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    position: relative;
+    background: url("../img/igor2.jpg") no-repeat center;
+    background-size: cover;
+    animation: bubble 5s linear infinite;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@keyframes bubble {
+  0%,
+  100% {
+    padding: 1rem;
+    border: 1px solid #e91e63;
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+
+  25% {
+    padding: 1rem;
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+  }
+
+  50% {
+    padding: 1rem;
+    border-radius: 28% 72% 44% 56% /49% 40% 60% 51%;
+  }
+
+  75% {
+    padding: 1rem;
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+}
+
+.what-i-do {
+  background-size: cover;
+  position: relative;
+  padding: 3rem 0;
+  background: #e91e63;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 70%;
+    width: 20%;
+    height: 20%;
+    background: #e91e63;
+    transform: rotateZ(-50deg);
+    z-index: 0;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 70%;
+    width: 10%;
+    height: 20%;
+    background: #232323;
+    transform: rotateZ(-50deg);
+    z-index: 0;
+    border-radius: 50%;
+  }
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 10;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .cards {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    .card {
+      padding: 1rem;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+
+      i {
+        margin-bottom: 1rem;
+        transition: all 0.5s;
+      }
+
+      h2 {
+        margin-bottom: 0.8rem;
+        font-family: "Orbitron", sans-serif;
+      }
+    }
+
+    .card-content {
+      p {
+        line-height: 1.7rem;
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+
+.card:hover i {
+  transform: translateY(-20px);
+}
+
+.form {
+  background: #232323;
+  position: relative;
+  padding: 3rem 0;
+
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 10;
+    font-family: "Orbitron", sans-serif;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li,
+    a {
+      font-size: 3rem;
+      display: inline;
+      color: #e91e63;
+      margin: 0.5rem;
+    }
+  }
+
+  button {
+    color: #e91e63;
+  }
+  .form-container {
+    background: linear-gradient(105deg, #e91e63 50%, transparent 50%);
+    width: 500px;
+    height: 500px;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transform: perspective(1500px) rotateY(20deg) rotateX(20deg);
+    transition: all 1s;
+    &:hover {
+      transform: perspective(1500px) rotateY(0) rotateX(0);
+    }
+
+    label {
+      display: block;
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 300px;
+      height: 2.3rem;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    .input-box {
+      margin: 2rem 0;
+    }
+  }
+}

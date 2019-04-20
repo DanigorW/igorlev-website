@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Igor lev</title>
+  </head>
+  <body>
+    <header id="header" class="main-header">
+      <div id="particles-js">
+        <nav class="main-nav">
+          <div class="logo">
+            <a href="/index.html">
+              <h2>Igor <span>lev</span></h2></a
+            >
+          </div>
+
+          <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#what-i-do">What i do</a></li>
+            <li><a href="#form">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="main-h1">
+          <h1><span class="h1-span"></span></h1>
+          <button class="btn btn-white" type="button">
+            <a href="#form">Contact Me</a>
+          </button>
+        </div>
+      </div>
+
+      <i class="fas fa-sort-down arrow fa-2x"></i>
+    </header>
+
+    <section id="about-me" class="about-me">
+      <h1 class="about-me-h1">
+        About me
+      </h1>
+
+      <div class="line"></div>
+
+      <div class="about-me-content">
+        <div class="about-me-pic">­</div>
+
+        <div class="about-me">
+          <h3>Frontend Developer</h3>
+          <p>
+            Hey there, my name is Igor Lev and I'm a frontend developer,
+            Specializes in building websites from scratch using recent
+            technologies like: HTML5, CSS3 / SASS, JAVA SCRIPT, REACT and more.
+            You can check my GitHub portfolio & my linkedin page in the links
+            below.
+          </p>
+          <div class="icons">
+            <li>
+              <a href="https://github.com/DanigorW" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/danigorw/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-i-do" class="what-i-do">
+      <h1 class="about-me-h1">
+        what i do
+      </h1>
+      <div class="line"></div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <i class="fab fa-html5 fa-3x"></i>
+            <h2>HTML5</h2>
+            <P>
+              The language of the internet, Every frontend developer must know
+              HTML, It's the building blocks of the web.
+            </P>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i class="fab fa-css3 fa-3x"></i>
+            <h2>CSS3</h2>
+            <P
+              >Do you have a design idea in mind? Or did you saw your dream site
+              and always wanted it? I'm here to make dreams come true
+            </P>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i class="fab fa-js fa-3x"></i>
+            <h2>JAVA SCRIPT</h2>
+            <P
+              >Did you know that you are not really considered a frontend
+              developer if you do not know JAVA SCRIPT from sleep?
+            </P>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i class="fas fa-code fa-3x"></i>
+            <h2>MORE CODE</h2>
+            <P
+              >After you've become a master in HTML,CSS & JAVA SCRIPT it's time
+              to learn React or Angular. From there the sky is the limit
+            </P>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="form">
+      <h1>
+        Contact
+      </h1>
+      <div class="line"></div>
+      <div class="form-container-main">
+        ­
+        <form
+          name="contact"
+          class="form-container"
+          method="POST"
+          data-netlify="true"
+        >
+          <div class="input-box">
+            <label for="fullName">Full Name</label>
+            <input name="fullName" id="fullName" type="text" required />
+          </div>
+
+          <div class="input-box">
+            <label for="phone">Phone</label>
+            <input name="phone" id="phone" type="number" required />
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required />
+          </div>
+
+          <button class="btn btn-white" type="submit">Hire me</button>
+        </form>
+
+        <div class="icons">
+          <li>
+            <a href="https://github.com/DanigorW" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/danigorw/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </div>
+      </div>
+    </section>
+
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -62,16 +62,6 @@ img {
   margin: 0 auto;
 }
 
-.arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  visibility: hidden;
-  animation: blink 5s infinite;
-}
-
 .main-header {
   height: 90vh;
   -webkit-clip-path: polygon(
@@ -218,44 +208,6 @@ ul li:hover a::before {
   }
 }
 
-@media (max-width: 1300px) {
-  .circle-nav {
-    display: block;
-  }
-
-  .main-nav ul {
-    display: none;
-  }
-
-  .main-nav {
-    grid-template-columns: 1fr;
-  }
-
-  .logo {
-    padding-top: 1rem;
-  }
-
-  .main-h1 {
-    font-size: 13px;
-  }
-
-  .btn-white {
-    font-size: 17px;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  .main-header {
-    height: 50vh;
-  }
-
-  .main-h1 {
-    top: 30%;
-  }
-}
-
 // section-1 what i do //
 
 .line {
@@ -310,11 +262,6 @@ ul li:hover a::before {
     margin-top: 5rem;
     justify-content: center;
     transition: all 1s;
-  }
-
-  .about-me-content-show {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   .about-me {
@@ -503,11 +450,13 @@ ul li:hover a::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   .form-container-main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     li,
     a {
@@ -555,5 +504,234 @@ ul li:hover a::before {
     .input-box {
       margin: 2rem 0;
     }
+  }
+
+  .contact {
+    margin-top: 10rem;
+    margin-left: -9rem;
+    color: #fff;
+    font-family: sans-serif;
+
+    h3 {
+      font-family: "Orbitron", sans-serif;
+      margin-bottom: 1rem;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.footer {
+  background: #232323;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  //padding: 0.8rem 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  div {
+    padding: 0 1rem;
+  }
+
+  p {
+    padding: 0 1rem;
+    font-size: 10px;
+  }
+  span {
+    font-size: 1rem;
+    color: #e91e63;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      text-align: right;
+      font-size: 2rem;
+      color: #fff;
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .main-nav .logo {
+    font-size: 3rem;
+  }
+
+  .main-nav {
+    li {
+      font-size: 3rem;
+    }
+  }
+
+  .main-h1 {
+    font-size: 2rem;
+
+    button {
+      padding: 1.8rem 4.5rem;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .about-me {
+    margin-top: -4rem;
+  }
+
+  .about-me .about-me-h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .line {
+    width: 400px;
+  }
+
+  #about-me-1 {
+    h3 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      width: 1000px;
+    }
+
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .about-me .about-me-pic {
+    width: 500px;
+    height: 500px;
+    margin-right: 2rem;
+  }
+
+  .what-i-do {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .card {
+      width: 500px;
+
+      p {
+        width: 450px;
+        font-size: 2rem;
+      }
+
+      i {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &::before {
+      left: 71%;
+    }
+  }
+
+  .form {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .form-container {
+      width: 600px;
+      height: auto;
+      input {
+        width: 400px;
+        height: 3rem;
+      }
+
+      label {
+        font-size: 2rem;
+      }
+    }
+    .contact {
+      h3 {
+        font-size: 2rem;
+        margin-left: -2rem;
+        margin-top: 5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-left: -2rem;
+      }
+    }
+  }
+  .icons {
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .footer {
+    div p {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+
+    li a {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-nav {
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    ul,
+    li,
+    a {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .about-me {
+    margin-top: -8rem;
+
+    p {
+      padding: 0 5rem;
+    }
+
+    .about-me-h1 {
+      margin-top: 5rem;
+    }
+
+    .about-me-content {
+      text-align: center;
+    }
+  }
+  .form {
+    width: 500px;
+    padding: 2rem 2rem;
   }
 }

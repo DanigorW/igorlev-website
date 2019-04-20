@@ -1,4 +1,4 @@
-let word = "if you imagine it, I can build it";
+let word = "if you can imagine it, I can build it";
 let i = 0;
 
 const typing = () => {

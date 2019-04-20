@@ -49,15 +49,6 @@ img {
   max-width: 1100;
   margin: 0 auto; }
 
-.arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  visibility: hidden;
-  animation: blink 5s infinite; }
-
 .main-header {
   height: 90vh;
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%, 0 0);
@@ -151,26 +142,6 @@ ul li:hover a::before {
   100% {
     opacity: 0; } }
 
-@media (max-width: 1300px) {
-  .circle-nav {
-    display: block; }
-  .main-nav ul {
-    display: none; }
-  .main-nav {
-    grid-template-columns: 1fr; }
-  .logo {
-    padding-top: 1rem; }
-  .main-h1 {
-    font-size: 13px; }
-  .btn-white {
-    font-size: 17px; }
-  h2 {
-    text-align: center; }
-  .main-header {
-    height: 50vh; }
-  .main-h1 {
-    top: 30%; } }
-
 .line {
   width: 220px;
   height: 2px;
@@ -201,9 +172,6 @@ ul li:hover a::before {
     margin-top: 5rem;
     justify-content: center;
     transition: all 1s; }
-  .about-me .about-me-content-show {
-    opacity: 1;
-    transform: translateY(0); }
   .about-me .about-me h3 {
     font-size: 1.8rem;
     color: #fff;
@@ -343,11 +311,13 @@ ul li:hover a::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .form .form-container-main {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     .form .form-container-main li,
     .form .form-container-main a {
       font-size: 3rem;
@@ -383,3 +353,133 @@ ul li:hover a::before {
       font-size: 1.3rem; }
     .form .form-container .input-box {
       margin: 2rem 0; }
+  .form .contact {
+    margin-top: 10rem;
+    margin-left: -9rem;
+    color: #fff;
+    font-family: sans-serif; }
+    .form .contact h3 {
+      font-family: "Orbitron", sans-serif;
+      margin-bottom: 1rem;
+      font-weight: 100; }
+    .form .contact p {
+      font-size: 1.1rem; }
+
+.footer {
+  background: #232323;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .footer div {
+    padding: 0 1rem; }
+  .footer p {
+    padding: 0 1rem;
+    font-size: 10px; }
+  .footer span {
+    font-size: 1rem;
+    color: #e91e63; }
+  .footer li {
+    display: inline; }
+    .footer li a {
+      text-align: right;
+      font-size: 2rem;
+      color: #fff;
+      margin-right: 2rem; }
+
+@media (min-width: 2000px) {
+  .main-nav .logo {
+    font-size: 3rem; }
+  .main-nav li {
+    font-size: 3rem; }
+  .main-h1 {
+    font-size: 2rem; }
+    .main-h1 button {
+      padding: 1.8rem 4.5rem; }
+      .main-h1 button a {
+        font-size: 2rem; }
+  .about-me {
+    margin-top: -4rem; }
+  .about-me .about-me-h1 {
+    font-size: 3rem;
+    margin-top: 3rem; }
+  .line {
+    width: 400px; }
+  #about-me-1 h3 {
+    font-size: 3rem; }
+  #about-me-1 p {
+    font-size: 1.8rem;
+    width: 1000px; }
+  #about-me-1 i {
+    font-size: 4rem; }
+  .about-me .about-me-pic {
+    width: 500px;
+    height: 500px;
+    margin-right: 2rem; }
+  .what-i-do h1 {
+    font-size: 3rem; }
+  .what-i-do .card {
+    width: 500px; }
+    .what-i-do .card p {
+      width: 450px;
+      font-size: 2rem; }
+    .what-i-do .card i {
+      font-size: 4rem; }
+    .what-i-do .card h2 {
+      font-size: 2rem; }
+  .what-i-do::before {
+    left: 71%; }
+  .form h1 {
+    font-size: 3rem; }
+  .form .form-container {
+    width: 600px;
+    height: auto; }
+    .form .form-container input {
+      width: 400px;
+      height: 3rem; }
+    .form .form-container label {
+      font-size: 2rem; }
+  .form .contact h3 {
+    font-size: 2rem;
+    margin-left: -2rem;
+    margin-top: 5rem; }
+  .form .contact p {
+    font-size: 1.8rem;
+    margin-left: -2rem; }
+  .icons i {
+    font-size: 4rem; }
+  .footer div p {
+    font-size: 1rem; }
+  .footer span {
+    font-size: 1rem; }
+  .footer li a {
+    font-size: 3rem; } }
+
+@media (max-width: 1000px) {
+  .main-nav {
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 1fr; }
+    .main-nav .logo {
+      margin-bottom: 1rem; }
+    .main-nav ul,
+    .main-nav li,
+    .main-nav a {
+      margin: 0 auto;
+      text-align: center; }
+  .about-me {
+    margin-top: -8rem; }
+    .about-me p {
+      padding: 0 5rem; }
+    .about-me .about-me-h1 {
+      margin-top: 5rem; }
+    .about-me .about-me-content {
+      text-align: center; }
+  .form {
+    width: 500px;
+    padding: 2rem 2rem; } }

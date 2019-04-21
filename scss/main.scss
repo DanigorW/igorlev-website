@@ -735,6 +735,10 @@ ul li:hover a::before {
 }
 
 @media (max-width: 1000px) {
+  .what-i-do::after,
+  .what-i-do::before {
+    display: none;
+  }
   .main-nav {
     margin: 0 auto;
     text-align: center;

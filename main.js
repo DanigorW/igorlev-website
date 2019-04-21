@@ -51,16 +51,9 @@ let sw = window.matchMedia("(max-width: 1300px)").matches;
 if (sw < window.matchMedia("(max-width: 1300px)")) {
   document.querySelector(".circle-nav").style.display = "block";
 }
-/*
-const scroll2 = () => {
-  let arrow = document.querySelector(".arrow");
-  let scroll = window.scrollY;
-  if (scroll > 10) {
-    arrow.style.visibility = "hidden";
 
-    setTimeout(scroll2, 100);
-  }
-};
-*/
 scroll();
-//scroll2();
+
+const SmoothScroll1 = new SmoothScroll('a[href*="#"]', {
+  speed: 800
+});

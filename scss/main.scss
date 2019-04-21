@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  //scroll-behavior: smooth;
 }
 
 #particles-js {
@@ -414,9 +414,8 @@ ul li:hover a::before {
       align-items: center;
       color: #fff;
 
-      img {
-        width: 50px;
-        height: 50px;
+      i {
+        font-size: 3rem;
         margin-bottom: 1rem;
         transition: all 0.5s;
       }
@@ -436,7 +435,7 @@ ul li:hover a::before {
   }
 }
 
-.card:hover img {
+.card:hover i {
   transform: translateY(-20px);
 }
 
@@ -498,6 +497,7 @@ ul li:hover a::before {
     border-radius: 10px;
     transform: perspective(1500px) rotateY(20deg) rotateX(20deg);
     transition: all 1s;
+
     &:hover {
       transform: perspective(1500px) rotateY(0) rotateX(0);
     }
@@ -589,6 +589,12 @@ ul li:hover a::before {
       border-radius: 50%;
       padding: 0.5rem;
       margin-right: 2rem;
+      margin-bottom: 0.5rem;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
   }
 }
@@ -608,7 +614,7 @@ ul li:hover a::before {
     font-size: 2rem;
 
     button {
-      padding: 1.8rem 4.5rem;
+      padding: 1.2rem 3rem;
 
       a {
         font-size: 2rem;
@@ -734,8 +740,12 @@ ul li:hover a::before {
     text-align: center;
     grid-template-columns: 1fr;
 
+    h2 {
+      font-size: 3rem;
+    }
+
     .logo {
-      margin-bottom: 1rem;
+      margin: 2rem 0;
     }
 
     a {
@@ -748,6 +758,7 @@ ul li:hover a::before {
     ul {
       text-align: center;
       margin: 0 auto;
+      margin-top: 2rem;
       //display: flex;
       //flex-direction: column;
     }
@@ -777,6 +788,7 @@ ul li:hover a::before {
       text-align: center;
     }
   }
+
   .form {
     width: 100vw;
     overflow: hidden;
@@ -798,7 +810,8 @@ ul li:hover a::before {
     padding: 0;
   }
 
-  .icons {
+  .body {
+    width: 100vw;
   }
 }
 

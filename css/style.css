@@ -5,8 +5,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+  box-sizing: border-box; }
 
 #particles-js {
   height: 80vh; }
@@ -288,9 +287,8 @@ ul li:hover a::before {
       justify-content: center;
       align-items: center;
       color: #fff; }
-      .what-i-do .cards .card img {
-        width: 50px;
-        height: 50px;
+      .what-i-do .cards .card i {
+        font-size: 3rem;
         margin-bottom: 1rem;
         transition: all 0.5s; }
       .what-i-do .cards .card h2 {
@@ -300,7 +298,7 @@ ul li:hover a::before {
       line-height: 1.7rem;
       font-family: sans-serif; }
 
-.card:hover img {
+.card:hover i {
   transform: translateY(-20px); }
 
 .form {
@@ -416,7 +414,11 @@ ul li:hover a::before {
       background: #e91e63;
       border-radius: 50%;
       padding: 0.5rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      margin-bottom: 0.5rem;
+      transition: all 0.5s; }
+      .footer li img:hover {
+        transform: translateY(-5px); }
 
 @media (min-width: 2000px) {
   .main-nav .logo {
@@ -426,7 +428,7 @@ ul li:hover a::before {
   .main-h1 {
     font-size: 2rem; }
     .main-h1 button {
-      padding: 1.8rem 4.5rem; }
+      padding: 1.2rem 3rem; }
       .main-h1 button a {
         font-size: 2rem; }
   .about-me {
@@ -491,8 +493,10 @@ ul li:hover a::before {
     margin: 0 auto;
     text-align: center;
     grid-template-columns: 1fr; }
+    .main-nav h2 {
+      font-size: 3rem; }
     .main-nav .logo {
-      margin-bottom: 1rem; }
+      margin: 2rem 0; }
     .main-nav a {
       margin: 0 auto;
       text-align: center;
@@ -500,7 +504,8 @@ ul li:hover a::before {
       padding: 0; }
     .main-nav ul {
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 2rem; }
   .main-h1 {
     font-size: 1rem;
     width: 80vw; }
@@ -529,7 +534,9 @@ ul li:hover a::before {
   .form-container-main {
     width: 100vw;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .body {
+    width: 100vw; } }
 
 .cards.show {
   opacity: 1;

@@ -10,7 +10,7 @@
   //scroll-behavior: smooth;
 }
 
-body {
+html {
   overflow-x: hidden;
   overscroll-behavior-x: hidden;
 }
@@ -819,7 +819,6 @@ ul li:hover a::before {
   }
 
   .form-container-main {
-    width: 100vw;
     margin: 0;
     padding: 0;
   }

@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+html {
   overflow-x: hidden;
   overscroll-behavior-x: hidden; }
 
@@ -542,7 +542,6 @@ ul li:hover a::before {
     align-items: center;
     justify-self: center; }
   .form-container-main {
-    width: 100vw;
     margin: 0;
     padding: 0; } }
 

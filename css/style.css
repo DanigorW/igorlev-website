@@ -8,7 +8,8 @@
   box-sizing: border-box; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overscroll-behavior-x: hidden; }
 
 #particles-js {
   height: 80vh; }

@@ -10,6 +10,10 @@
   //scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #particles-js {
   height: 80vh;
 }
@@ -735,6 +739,11 @@ ul li:hover a::before {
 }
 
 @media (max-width: 1000px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .what-i-do::after,
   .what-i-do::before {
     display: none;
@@ -812,10 +821,6 @@ ul li:hover a::before {
     width: 100vw;
     margin: 0;
     padding: 0;
-  }
-
-  .body {
-    width: 100vw;
   }
 }
 

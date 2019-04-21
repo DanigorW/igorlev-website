@@ -1,3 +1,38 @@
+const scroll = () => {
+  let controller = new ScrollMagic.Controller();
+  let ourScene = new ScrollMagic.Scene({
+    triggerElement: ".cards",
+    offset: -200
+  })
+    .setClassToggle(".cards", "show")
+    .addTo(controller);
+};
+
+scroll();
+
+const scroll2 = () => {
+  let controller = new ScrollMagic.Controller();
+  let ourScene = new ScrollMagic.Scene({
+    triggerElement: ".cards",
+    offset: -850
+  })
+    .setClassToggle(".about-me-content", "show")
+    .addTo(controller);
+};
+
+scroll2();
+
+const scroll3 = () => {
+  let controller = new ScrollMagic.Controller();
+  let ourScene = new ScrollMagic.Scene({
+    triggerElement: ".cards"
+  })
+    .setClassToggle(".form-container", "show")
+    .addTo(controller);
+};
+
+scroll3();
+
 let word = "if you can imagine it, I can build it";
 let i = 0;
 
@@ -29,15 +64,3 @@ const scroll2 = () => {
 */
 scroll();
 //scroll2();
-
-const showItem = () => {
-  const about = document.querySelector(".about-me-content");
-  let aboutPosition = about.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight;
-
-  if (about > screenPosition) {
-    about.classList.add(".about-me-content-show");
-  }
-};
-
-window.addEventListener("scroll", showItem);

@@ -530,10 +530,10 @@ ul li:hover a::before {
       margin-top: 5rem; }
     .about-me .about-me-content {
       text-align: center; }
-  .form {
-    width: 100vw;
-    overflow: hidden;
-    padding: 2rem 2rem; }
+    .about-me .form {
+      width: 100vw;
+      overflow: hidden;
+      padding: 2rem 2rem; }
   .icons-container {
     width: 100vw;
     margin: 3rem 0;

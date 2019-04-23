@@ -291,7 +291,10 @@ ul li:hover a::before {
       justify-content: center;
       align-items: center;
       color: #fff; }
-      .what-i-do .cards .card i {
+      .what-i-do .cards .card i,
+      .what-i-do .cards .card img {
+        width: 50px;
+        height: 50px;
         font-size: 3rem;
         margin-bottom: 1rem;
         transition: all 0.5s; }
@@ -302,7 +305,7 @@ ul li:hover a::before {
       line-height: 1.7rem;
       font-family: sans-serif; }
 
-.card:hover i {
+.card:hover img {
   transform: translateY(-20px); }
 
 .form {
@@ -320,71 +323,68 @@ ul li:hover a::before {
     z-index: 10;
     font-family: "Orbitron", sans-serif; }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .form .form-container-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .form .form-container-main li,
-    .form .form-container-main a,
-    .form .form-container-main img {
-      width: 50px;
-      height: 50px;
-      font-size: 3rem;
-      display: inline;
-      color: #e91e63;
-      margin: 0.1rem; }
-  .form button {
-    color: #e91e63; }
-  .form .form-container {
-    opacity: 0;
-    transition: all 3s;
-    background: linear-gradient(105deg, #e91e63 50%, transparent 50%);
-    width: 500px;
-    height: 500px;
-    padding: 3rem 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
-    transform: perspective(1500px) rotateY(20deg) rotateX(20deg);
-    transition: all 1s; }
-    .form .form-container:hover {
-      transform: perspective(1500px) rotateY(0) rotateX(0); }
-    .form .form-container label {
-      display: block;
-      font-family: "Orbitron", sans-serif;
-      font-size: 1.4rem;
-      color: #fff;
-      margin-bottom: 0.5rem; }
-    .form .form-container input {
-      width: 300px;
-      height: 2.3rem;
-      outline: none;
-      border: none;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 1.3rem; }
-    .form .form-container .input-box {
-      margin: 2rem 0; }
-  .form .contact {
+.form .form-container-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center; }
+  .form .form-container-main li,
+  .form .form-container-main a,
+  .form .form-container-main img {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    display: inline;
+    color: #e91e63;
+    margin: 0.1rem; }
+
+.form button {
+  color: #e91e63; }
+
+.form .form-container {
+  opacity: 0;
+  transition: all 3s;
+  background: linear-gradient(105deg, #e91e63 50%, transparent 50%);
+  width: 400px;
+  height: 500px;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  transform: perspective(1500px) rotateY(20deg) rotateX(20deg);
+  transition: all 1s; }
+  .form .form-container:hover {
+    transform: perspective(1500px) rotateY(0) rotateX(0); }
+  .form .form-container label {
+    display: block;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
     color: #fff;
-    font-family: sans-serif; }
-    .form .contact h3 {
-      font-family: "Orbitron", sans-serif;
-      margin-bottom: 0.5rem;
-      font-weight: 100;
-      margin-left: 10px; }
-    .form .contact p {
-      margin-left: 10px;
-      font-size: 1.1rem; }
-  .form .icons-container {
-    display: flex;
-    flex-direction: column; }
+    margin-bottom: 0.5rem; }
+  .form .form-container input {
+    width: 300px;
+    height: 2.3rem;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.3rem; }
+  .form .form-container .input-box {
+    margin: 2rem 0; }
+
+.form .contact {
+  color: #fff;
+  font-family: sans-serif; }
+  .form .contact h3 {
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    margin-left: 10px; }
+  .form .contact p {
+    margin-left: 10px;
+    font-size: 1.1rem; }
+
+.form .icons-container {
+  display: flex;
+  flex-direction: column; }
 
 .footer {
   background: #232323;
@@ -493,12 +493,11 @@ ul li:hover a::before {
     font-size: 3rem; } }
 
 @media (max-width: 1000px) {
+  .main-header {
+    height: 60vh; }
   body {
     width: 100%;
     overflow-x: hidden; }
-  .what-i-do::after,
-  .what-i-do::before {
-    display: none; }
   .main-nav {
     margin: 0 auto;
     text-align: center;
@@ -513,12 +512,14 @@ ul li:hover a::before {
       font-size: 1.1rem;
       padding: 0; }
     .main-nav ul {
+      display: none;
       text-align: center;
       margin: 0 auto;
       margin-top: 2rem; }
   .main-h1 {
     font-size: 1rem;
-    width: 80vw; }
+    width: 80vw;
+    top: 38%; }
     .main-h1 button {
       font-size: 1rem;
       padding: 1rem; }
@@ -542,8 +543,12 @@ ul li:hover a::before {
     align-items: center;
     justify-self: center; }
   .form-container-main {
-    margin: 0;
-    padding: 0; } }
+    grid-template-columns: 1fr; }
+    .form-container-main .form-container.show {
+      width: 300px;
+      justify-self: center; }
+      .form-container-main .form-container.show input {
+        width: 250px; } }
 
 .cards.show {
   opacity: 1;

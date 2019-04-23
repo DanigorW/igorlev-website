@@ -419,7 +419,10 @@ ul li:hover a::before {
       align-items: center;
       color: #fff;
 
-      i {
+      i,
+      img {
+        width: 50px;
+        height: 50px;
         font-size: 3rem;
         margin-bottom: 1rem;
         transition: all 0.5s;
@@ -440,7 +443,7 @@ ul li:hover a::before {
   }
 }
 
-.card:hover i {
+.card:hover img {
   transform: translateY(-20px);
 }
 
@@ -463,17 +466,10 @@ ul li:hover a::before {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
   .form-container-main {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
-    flex-wrap: wrap;
 
     li,
     a,
@@ -495,7 +491,7 @@ ul li:hover a::before {
     transition: all 3s;
 
     background: linear-gradient(105deg, #e91e63 50%, transparent 50%);
-    width: 500px;
+    width: 400px;
     height: 500px;
     padding: 3rem 2rem;
     margin-top: 2rem;
@@ -740,15 +736,15 @@ ul li:hover a::before {
 }
 
 @media (max-width: 1000px) {
+  .main-header {
+    height: 60vh;
+  }
+
   body {
     width: 100%;
     overflow-x: hidden;
   }
 
-  .what-i-do::after,
-  .what-i-do::before {
-    display: none;
-  }
   .main-nav {
     margin: 0 auto;
     text-align: center;
@@ -770,6 +766,7 @@ ul li:hover a::before {
     }
 
     ul {
+      display: none;
       text-align: center;
       margin: 0 auto;
       margin-top: 2rem;
@@ -785,6 +782,7 @@ ul li:hover a::before {
       font-size: 1rem;
       padding: 1rem;
     }
+    top: 38%;
   }
 
   .about-me {
@@ -818,8 +816,16 @@ ul li:hover a::before {
   }
 
   .form-container-main {
-    margin: 0;
-    padding: 0;
+    grid-template-columns: 1fr;
+
+    .form-container.show {
+      width: 300px;
+      justify-self: center;
+
+      input {
+        width: 250px;
+      }
+    }
   }
 }
 

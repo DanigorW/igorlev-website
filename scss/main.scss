@@ -419,13 +419,16 @@ ul li:hover a::before {
       align-items: center;
       color: #fff;
 
-      i,
-      img {
+      i {
         width: 50px;
         height: 50px;
         font-size: 3rem;
         margin-bottom: 1rem;
         transition: all 0.5s;
+      }
+
+      &:hover i {
+        transform: translateY(-20px);
       }
 
       h2 {
@@ -441,10 +444,6 @@ ul li:hover a::before {
       }
     }
   }
-}
-
-.card:hover img {
-  transform: translateY(-20px);
 }
 
 .form {

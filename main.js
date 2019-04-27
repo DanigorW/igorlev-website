@@ -57,3 +57,14 @@ scroll();
 const SmoothScroll1 = new SmoothScroll('a[href*="#"]', {
   speed: 800
 });
+
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: ".dots",
+  arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next"
+  }
+});

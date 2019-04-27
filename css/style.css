@@ -558,3 +558,32 @@ ul li:hover a::before {
 
 .form-container.show {
   opacity: 1; }
+
+.my-work-section {
+  padding: 3rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/11.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 60vh; }
+  .my-work-section h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 10;
+    font-family: "Orbitron", sans-serif; }
+  .my-work-section .glider-contain {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem; }
+    .my-work-section .glider-contain .glider-card {
+      margin: 2rem 2rem; }
+    .my-work-section .glider-contain h3 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem; }
+    .my-work-section .glider-contain img {
+      border: 1px solid #fff;
+      border-radius: 10px; }

@@ -845,3 +845,45 @@ ul li:hover a::before {
 .form-container.show {
   opacity: 1;
 }
+
+.my-work-section {
+  padding: 3rem 0;
+
+  //background: #393939;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/11.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 60vh;
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 10;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .glider-contain {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+
+    .glider-card {
+      margin: 2rem 2rem;
+    }
+
+    h3 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      border: 1px solid #fff;
+      border-radius: 10px;
+    }
+  }
+}

@@ -855,7 +855,7 @@ ul li:hover a::before {
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  height: 60vh;
+  height: 75vh;
   h1 {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -873,12 +873,38 @@ ul li:hover a::before {
 
     .glider-card {
       margin: 2rem 2rem;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     h3 {
       font-family: "Orbitron", sans-serif;
       font-size: 1.3rem;
       margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: sans-serif;
+      margin: 1rem 0;
+    }
+
+    .gallery-btn {
+      padding: 0.3rem 1.8rem;
+      border-radius: 10px;
+      outline: none;
+      background: none;
+      border: none;
+
+      transition: all 0.5s;
+      margin: 1rem 0;
+
+      a {
+        color: #fff;
+        font-size: 1.1rem;
+        transition: all 0.5s;
+      }
     }
 
     img {

@@ -68,3 +68,7 @@ new Glider(document.querySelector(".glider"), {
     next: ".glider-next"
   }
 });
+
+button.addEventListener("submit", e => {
+  e.preventDefault();
+});

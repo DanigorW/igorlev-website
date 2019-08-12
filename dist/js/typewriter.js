@@ -11,3 +11,9 @@ let typing = () => {
 };
 
 typing();
+
+const button = document.querySelector(".submit");
+
+button.addEventListener("submit", e => {
+  e.preventDefault();
+});

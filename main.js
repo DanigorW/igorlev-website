@@ -104,8 +104,3 @@ new Glider(document.querySelector(".glider"), {
     }
   ]
 });
-const button = document.querySelector(".submit");
-
-button.addEventListener("submit", e => {
-  e.preventDefault();
-});
